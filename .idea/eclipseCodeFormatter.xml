@@ -4,6 +4,8 @@
     <option name="projectSpecificProfile">
       <ProjectSpecificProfile>
         <option name="formatter" value="ECLIPSE" />
+        <option name="pathToConfigFileJava" value="$USER_HOME$/SVN/ct_source_formatter.xml" />
+        <option name="selectedJavaProfile" value="CT ECLIPSE SOURCE FORMATTER" />
       </ProjectSpecificProfile>
     </option>
   </component>
