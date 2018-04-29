@@ -46,6 +46,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         String user_id = mAuth.getCurrentUser().getUid();
+                        ChatPreferenceManager.instance(getApplicationContext()).setUserName(user_id);
                         DatabaseReference current_user_db = mDatabase.child(user_id);
                         current_user_db.child("Name").setValue(name_content);
                         startActivity(new Intent(RegistrationActivity.this,LoginActivity.class));

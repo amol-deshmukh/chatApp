@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.hp.chatapplication.MainActivity">
+        <activity android:name="com.example.hp.chatapplication.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,6 +25,8 @@
 
 
         </activity>
+
+
         <activity android:name=".Buttons"></activity>
 
     </application>
