@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+repositories {
+    mavenCentral()
+
+
+
+}
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.hp.chatapplication"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.google.firebase:firebase-auth:15.0.0'
+    implementation 'com.google.firebase:firebase-database:15.0.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:2.3.0'
+
+
+    implementation 'com.google.firebase:firebase-core:15.0.0'
+}
+apply plugin: 'com.google.gms.google-services'
